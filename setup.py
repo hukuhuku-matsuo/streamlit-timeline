@@ -16,7 +16,7 @@ def readme() -> str:
 
 setuptools.setup(
     name="streamlit-timeline",
-    version="0.0.2",
+    version="0.0.3",
     author="Rob van Zoest",
     author_email="",
     description="A Streamlit custom component to display a timeline",

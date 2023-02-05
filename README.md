@@ -31,14 +31,24 @@ st.set_page_config(page_title="Timeline Example", layout="wide")
 with open('example.json', "r") as f:
     data = f.read()
 
+options = {
+    "start_at_end": True,
+    "is_embed": True
+}
+
 # render timeline
-timeline(data, height=800)
+timeline(data, height=800, additional_options=options)
 ```
 
 
 ## Parameters
 
 The `timeline()` function accepts a string or a dict, as long as it's in the [TimelineJS json format](https://timeline.knightlab.com/docs/json-format.html). The optional heigth of the visualization is in px.
+
+## Options
+
+For additional_option, [see here](https://github.com/NUKnightLab/TimelineJS#config-options)
+
 
 
 ## Preview
